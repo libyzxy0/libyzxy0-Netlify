@@ -3,16 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="This website is no content">
-    <title>Jan Liby Dela Costa</title>
-</head>
-
-<body>
-
-    <div class="box">
-        <p class="title">Notice : </p>
-        <p class="desc">This website is no content, Click the button below to view my website.</p>
-        <button onclick="window.location.href='https://libyzxy0.github.io/'" class="view">View my Website</button>
-    </div>
+    <title>Hatdog</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap');
 * {
@@ -20,7 +11,9 @@
     padding: 0;
     font-family: 'Edu VIC WA NT Beginner', cursive;
 }
-
+:root {
+    --primary: #76ecb3;
+}
 body {
     height: 100vh;
     display: flex;
@@ -43,21 +36,33 @@ body {
     font-size: 28px;
 }
 .desc {
-    color: #76ecb3;
+    color: var(--primary);
     margin: 10px 16px;
 }
-.view {
+.btn {
     border: 0;
     background: #1C1C1C;
     padding: 8px 16px;
     border-radius: 20px;
-    color: #76ecb3;
-    margin-top: 30px;
+    color: var(--primary);
+    margin-top: 10px;
     transition: 0.2s;
 }
-.view:hover, view:focus {
-    background: #76ecb3;
+.btn:hover, btn:focus {
+    background: var(--primary);
     color: #ffffff;
+}
+.social {
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+}
+.social i {
+    margin: 0 8px;
+    font-size: 20px;
+}
+.social i:hover, social i:focus {
+    color: var(--primary);
 }
 .box::before,
 .box::after {
@@ -78,7 +83,7 @@ body {
 }
 
 .box::after {
-    filter: blur(30px);
+    filter: blur(40px);
 }
 
 @keyframes border {
@@ -94,5 +99,22 @@ body {
 }
 
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="box">
+        <p class="title">Notice: </p>
+        <p class="desc">This page is no content, please click button below to Visit our website</p>
+        <button onclick="window.location.href='https://libyzxy0.github.io'" class="btn">Visit my website</button>
+        <div class="social">
+            <i onclick="window.location.href='https://facebook.com/libydelacosta'" class="ri-facebook-fill"></i>
+            <i onclick="window.location.href='https://m.me/libydelacosta'" class="ri-messenger-fill"></i>
+            <i onclick="window.location.href='mailto:janlibydelacosta@gmail.com'" class="ri-mail-send-line"></i>
+            <i onclick="window.location.href='https://github.com/libyzxy0'" class="ri-github-fill"></i>
+        </div>
+    </div>
 </body>
 </html>
+<!-- MADE WITH JAN LIBY DELA COSTA -->
